@@ -1,0 +1,11 @@
+<div class="card-group" align="center">
+  <li *ngFor="let hpChar of hpChars">
+    <div class="card text-center" style="width: 18rem">
+      <img class="card-img-top img-fluid" [src]="hpChar.image" />
+      <div class="card-body">
+        <h5 class="card-title">{{ hpChar.name }}</h5>
+        <p class="card-text">{{ hpChar.gender }}</p>
+      </div>
+    </div>
+  </li>
+</div>

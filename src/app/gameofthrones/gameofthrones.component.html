@@ -1,0 +1,11 @@
+<div class="card-group" align="center">
+  <li *ngFor="let gotChar of gotChars">
+    <div class="card text-center" style="width: 18rem">
+      <img class="card-img-top img-fluid" [src]="gotChar.imageUrl" />
+      <div class="card-body">
+        <h5 class="card-title">{{ gotChar.fullName }}</h5>
+        <p class="card-text">{{ gotChar.title }}</p>
+      </div>
+    </div>
+  </li>
+</div>
